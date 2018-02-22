@@ -17,7 +17,7 @@ class MyTestSuite(unittest.TestCase):
 			unittest.defaultTestLoader.loadTestsFromTestCase(LoginWrongCredentialsTest.LoginWrong),
 		])
 
-		outfile = open("TestReport.html", "w")
+		outfile = open("/TestReport.html", "w")
 
 		runner1 = HTMLTestRunner.HTMLTestRunner(
 			stream=outfile,
