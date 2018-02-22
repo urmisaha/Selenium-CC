@@ -26,6 +26,7 @@ class MyTestSuite(unittest.TestCase):
 		)
 
 		runner1.run(login_test)
+		outfile.close()
 
 
 
