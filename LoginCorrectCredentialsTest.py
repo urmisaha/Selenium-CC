@@ -12,7 +12,7 @@ class LoginCorrect(unittest.TestCase):
         user ="testuser"
 	pwd= "collaborative"
 	driver = webdriver.Firefox()
-	driver.get("http://10.129.132.146:9000/login")
+	driver.get("http://10.129.132.146:8000/login")
 	elem = driver.find_element_by_id("id_username")
 	elem.send_keys(user)
 	elem = driver.find_element_by_id("id_password")
