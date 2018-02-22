@@ -6,7 +6,7 @@ import LoginCorrectCredentialsTest
 import os
 import HTMLTestRunner
 
-direct = os.getcwd() + "\HTMLRunner"
+#direct = os.getcwd() + "\HTMLRunner"
 
 class MyTestSuite(unittest.TestCase):
 
@@ -18,7 +18,7 @@ class MyTestSuite(unittest.TestCase):
             unittest.defaultTestLoader.loadTestsFromTestCase(LoginWrongCredentialsTest.LoginWrong),
         ])
 
-        outfile = open(direct + "\TestReport.html", "w")
+        outfile = open("TestReport.html", "w")
 
         runner1 = HTMLTestRunner.HTMLTestRunner(
             stream=outfile,
