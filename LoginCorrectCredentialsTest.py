@@ -15,7 +15,7 @@ class LoginCorrect(unittest.TestCase):
         driver.get("http://10.129.132.146:8000/login")
         elem = driver.find_element_by_id("id_username")
         elem.send_keys(user)
-        elem = driver.find_element_by_id("id_password")
+        elem = driver.find_element_by_id("id_pass")
         elem.send_keys(pwd)
         driver.find_element_by_class_name('btn-block').click()
 
